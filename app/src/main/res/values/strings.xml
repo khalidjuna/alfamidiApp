@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">alfamidiApp</string>
+    <string name="selalu_di_hati">Selalu di Hati</string>
+    <string name="AlfamidiApp" />
+    <string name="forget_password">Forget Password ?</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+    <string name="nama">Nama</string>
+    <string name="password">Password</string>
+    <string name="tidak_punya_akun_daftar">Tidak punya akun? Daftar</string>
+</resources>

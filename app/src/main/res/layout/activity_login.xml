@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        app:tint="@android:color/holo_orange_dark"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="24sp"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitle"
+        android:layout_marginTop="32dp"
+        android:hint="@string/nama"
+        android:inputType="textPersonName"
+        android:backgroundTint="@android:color/holo_orange_dark"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password"
+        android:layout_below="@id/passwordEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotPasswordText"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tidak_punya_akun_daftar"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+</RelativeLayout>
